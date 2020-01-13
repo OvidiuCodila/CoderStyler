@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'identifier'
 	],
-	#category : #'GToolkit-Demo-CustomViews'
+	#category : #'GToolkit-Coder-Styler/Highlighter'
 }
 
 { #category : #'as yet unclassified' }

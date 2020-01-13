@@ -18,7 +18,7 @@ GtViews101 >> create [
 	show := GtSlideShow new.
 	show slides: {
 		(GtFilePictureSlide new fileReference:
-			(GtIcebergUtility documentAtPath:
+			(GtResourcesUtility resourceAtPath:
 				Path * 'feenkcom' / 'gtoolkit' / 'doc' / 'gtoolkit.png')).
 		(GtTitleSlide new titleText:
 			('custom views' asRopedText

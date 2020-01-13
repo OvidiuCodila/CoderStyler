@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'variablesDictionary'
 	],
-	#category : #'GToolkit-Demo-CustomViews'
+	#category : #'GToolkit-Coder-Styler/Highlighter'
 }
 
 { #category : #adding }

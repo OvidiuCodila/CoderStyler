@@ -237,8 +237,7 @@ GtViewsPresentationExamples >> viewCodeExample [
 	variableStyler addVariableName: 'aView'.
 	
 	coder := GtMethodCoder forMethod: (GtComputersNetwork>>#gtNetworksIpsViewFor:).
-	coder selectorsExplanationLink: selectorStyler.
-	coder variablesExplanationLink: variableStyler.
+	coder explanationLink: (GtCompositeExplanationLinkStyler forLinks: { selectorStyler. variableStyler }).
 	subject := (coder expanded: true) asElement.
 	subject forceLayout.
 	
@@ -306,7 +305,7 @@ GtViewsPresentationExamples >> viewColumnedListCodeExample [
 	selectorStyler addSelector: 'Name'.
 	
 	coder := GtMethodCoder forMethod: (GtComputersNetwork>>#gtNetworksComputersViewFor:).
-	coder selectorsExplanationLink: selectorStyler.
+	coder explanationLink: selectorStyler.
 	subject := (coder expanded: true) asElement.
 	subject forceLayout.
 	
@@ -371,7 +370,7 @@ GtViewsPresentationExamples >> viewListCodeExample [
 	selectorStyler addSelector: #items: withIdentifier: #items.
 	
 	coder := GtMethodCoder forMethod: (GtComputersNetwork>>#gtNetworksIpsViewFor:).
-	coder selectorsExplanationLink: selectorStyler.
+	coder explanationLink: selectorStyler.
 	subject := (coder expanded: true) asElement.
 	subject forceLayout.
 	
@@ -438,7 +437,7 @@ GtViewsPresentationExamples >> viewMondrianCodeExample [
 	selectorStyler addSelector: #toCenterTop withIdentifier: #to.
 	
 	coder := GtMethodCoder forMethod: (GtComputersNetwork>>#gtSchematicViewFor:).
-	coder selectorsExplanationLink: selectorStyler.
+	coder explanationLink: selectorStyler.
 	subject := (coder expanded: true) asElement.
 	subject forceLayout.
 	
