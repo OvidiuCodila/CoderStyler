@@ -25,7 +25,7 @@ GtComputersNetworkExamples >> emptyNetwork [
 	
 	| network |
 	network := GtComputersNetwork new
-		name: 'Network1'.
+		name: 'Network'.
 		
 	self assert: network computers isEmpty.
 	

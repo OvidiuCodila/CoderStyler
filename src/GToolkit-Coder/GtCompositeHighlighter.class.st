@@ -7,6 +7,13 @@ Class {
 	#category : #'GToolkit-Coder-Styler/Highlighter'
 }
 
+{ #category : #'instance creation' }
+GtCompositeHighlighter class >> forHighlighters: aCollection [
+	^ self new
+		forHighlighters: aCollection;
+		yourself
+]
+
 { #category : #'initialize-release' }
 GtCompositeHighlighter >> forHighlighters: aCollection [
 	highlighters := aCollection
